@@ -38,14 +38,14 @@ public class conexion {
             ResultSet rs = st.executeQuery(sql);
             
             while (rs.next()){
-                System.out.println(rs.getInt(1));
-                System.out.println(rs.getString(2));
-                System.out.println(rs.getString(3));
-                System.out.println(rs.getInt(4));
-                System.out.println(rs.getString(5));
-                System.out.println(rs.getInt(6));
-                System.out.println(rs.getDouble(7));
-                System.out.println(rs.getString(8));
+                System.out.println(rs.getInt("id"));
+                System.out.println(rs.getString("firstName"));
+                System.out.println(rs.getString("lastName"));
+                System.out.println(rs.getInt("age"));
+                System.out.println(rs.getString("email"));
+                System.out.println(rs.getInt("phoneNumber"));
+                System.out.println(rs.getDouble("salary"));
+                System.out.println(rs.getString("hiredate"));
                 System.out.println("---------------------------------");
                 
                        
